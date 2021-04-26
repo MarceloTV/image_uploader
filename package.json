@@ -1,0 +1,32 @@
+{
+  "name": "image_uploader",
+  "version": "1.0.0",
+  "description": "This is an API for upload Images",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc --project ./",
+    "start": "node build/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcelino A. Abreu Mejia",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ejs": "^3.0.6",
+    "@types/express": "^4.17.11",
+    "@types/morgan": "^1.9.2",
+    "@types/multer": "^1.4.5",
+    "@types/node": "^14.14.41",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/uuid": "^8.3.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.2"
+  }
+}

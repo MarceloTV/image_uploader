@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <section id="start" class="container">
+        <h1 class="title">Upload your image</h1>
+        <p class="subtitle">File should be Jpeg,Png</p>
+        <article class="drag_image" id="drag">
+            <img src="/assets/image.svg" class="image" alt="Drag an drop image here">
+            <p class="text">Drag & Drop your image here...</p>
+        </article>
+        <p class="or">Or</p>
+        <button class="btn">
+            <label for="file">
+                Choose a file
+            </label>
+        </button>
+    </section>
+
+    <section id="loading" hidden class="uploading">
+        <p class="title">Uploading...</p>
+        <div class="loading">
+            <div class="stick"></div>
+        </div>
+    </section>
+
+    <section id="final" hidden class="final">
+        <img class="checked" src="/assets/checked.png" alt="image uploaded">
+        <h2 class="title">Uploaded Successfully!</h2>
+        <img class="result" id="link_image" src="" alt="result">
+        <div class="link">
+            <input type="text" id="link_input" readonly value="" class="text" />
+            <button class="btn" id="btn">Copy Link</button>
+        </div>
+    </section>
+
+    <input type="file" hidden id="file">
+</body>
+</html>
